@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foto Gallery | Balkans</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="main-content">
+      <button id="back" onclick="back()"><</button>
+
+      <div id="main-pic">
+        <img id="the-pic" src="images/img1.jpg" alt="img1">
+      </div>
+
+      <button id="next" onclick="next()">></button>
+    </div>
+
+    <p id="header">Belgrade</p>
+
+    <div id="side-pics">
+      <div class="pics">
+        <img src="images/img1.jpg" alt="img1" onclick="imgChange(1)">
+      </div>
+
+      <div class="pics">
+        <img src="images/img2.jpg" alt="img2" onclick="imgChange(2)">
+      </div>
+
+      <div class="pics">
+        <img src="images/img3.jpg" alt="img3" onclick="imgChange(3)">
+      </div>
+
+      <div class="pics">
+        <img src="images/img4.jpg" alt="img4" onclick="imgChange(4)">
+      </div>
+
+      <div class="pics">
+        <img src="images/img5.jpg" alt="img5" onclick="imgChange(5)"> 
+      </div>
+
+      <div class="pics">
+        <img src="images/img6.jpg" alt="img6" onclick="imgChange(6)">
+      </div>
+
+      <div class="pics">
+        <img src="images/img7.jpg" alt="img7" onclick="imgChange(7)">
+      </div>
+
+      <div class="pics">
+        <img src="images/img8.jpg" alt="img8" onclick="imgChange(8)">
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
