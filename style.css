@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding: 50px;
+  margin: 0;
   box-sizing: border-box;
   background-color: rgb(220, 220, 220);
 }
@@ -13,6 +13,8 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  width: 90%;
+  max-width: 1000px;
 }
 
 #main-pic {
@@ -28,10 +30,10 @@ body {
   height: 100px;
   border-radius: 6px;
   display: grid;
-  justify-content: space-between;
-  align-items: center;
   grid-template-columns: repeat(8, 1fr);
   gap: 10px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .pics {
@@ -57,9 +59,10 @@ body {
 
 #main-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 button {
@@ -88,6 +91,8 @@ button:hover {
   color: black;
 }
 
+/* --- MEDIA QUERIES --- */
+
 @media (max-width: 950px) {
   #main-pic {
     height: 300px;
@@ -101,16 +106,19 @@ button:hover {
 
 @media (max-width: 450px) {
   body {
-    height: auto;
+    display: block; /* ukinuti flex da body bude normalan blok */
+    height: auto;    /* da se telo prilagodi sadržaju */
+    margin: 20px;    /* dodato malo margine sa strane da ne lepi */
   }
 
   #container {
-    margin: 20px;
+    margin: 0 auto; /* centriranje kontejnera */
+    width: 100%;    /* zauzima punu širinu ekrana */
   }
 
   #main-pic {
     height: 200px;
-    width: auto;
+    width: 100%;  /* zauzima punu širinu kontejnera */
   }
 
   #main-content {
@@ -120,5 +128,13 @@ button:hover {
 
   #side-pics {
     grid-template-columns: repeat(2, 1fr);
+    height: auto;  /* neka visina bude automatska, da ne seče slike */
+    gap: 8px;
+  }
+
+  .pics {
+    width: 80%;  /* zauzima celu širinu ćelije */
+    height: auto;
+    aspect-ratio: 1 / 1; /* kvadratni odnos */
   }
 }
