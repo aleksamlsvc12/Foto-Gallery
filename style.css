@@ -106,19 +106,19 @@ button:hover {
 
 @media (max-width: 450px) {
   body {
-    display: block; /* ukinuti flex da body bude normalan blok */
-    height: auto;    /* da se telo prilagodi sadržaju */
-    margin: 20px;    /* dodato malo margine sa strane da ne lepi */
+    display: block;
+    height: auto;
+    margin: 20px;
   }
 
   #container {
-    margin: 0 auto; /* centriranje kontejnera */
-    width: 100%;    /* zauzima punu širinu ekrana */
+    margin: 0 auto;
+    width: 100%;
   }
 
   #main-pic {
     height: 200px;
-    width: 100%;  /* zauzima punu širinu kontejnera */
+    width: 100%;
   }
 
   #main-content {
@@ -128,13 +128,13 @@ button:hover {
 
   #side-pics {
     grid-template-columns: repeat(2, 1fr);
-    height: auto;  /* neka visina bude automatska, da ne seče slike */
+    height: auto;
     gap: 8px;
   }
 
   .pics {
-    width: 80%;  /* zauzima celu širinu ćelije */
+    width: 80%;
     height: auto;
-    aspect-ratio: 1 / 1; /* kvadratni odnos */
+    aspect-ratio: 1 / 1;
   }
 }
