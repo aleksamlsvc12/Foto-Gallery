@@ -91,6 +91,7 @@ button:hover {
 @media (max-width: 950px) {
   #main-pic {
     height: 300px;
+    width: 350px;
   }
 
   #side-pics {
@@ -107,8 +108,9 @@ button:hover {
     margin: 20px;
   }
 
-  #main-pic{
+  #main-pic {
     height: 200px;
+    width: auto;
   }
 
   #main-content {
