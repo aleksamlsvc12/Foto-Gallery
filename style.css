@@ -2,7 +2,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;
+  height: 100vh;
   padding: 50px;
   box-sizing: border-box;
   background-color: rgb(220, 220, 220);
@@ -102,6 +102,7 @@ button:hover {
 @media (max-width: 450px) {
   body {
     padding: 0;
+    height: auto;
   }
 
   #container {
